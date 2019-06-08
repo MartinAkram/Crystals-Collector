@@ -24,76 +24,29 @@ $(document).ready(function() {
     $("#totalGuessed").html(totalGuessed);
   }
 
+  var crystals = ["crystal-1", "crystal-2", "crystal-3", "crystal-4"];
+  var crystalValues = [crystal1, crystal2, crystal3, crystal4];
+
   $(".crystal").on("click", function() {
     whichCrystal = $(this).attr("value");
     if (totalGuessed < targetNumber.html()) {
-      if (whichCrystal === "crystal-1") {
-        crystalValue1 = crystal1;
-        totalGuessed = totalGuessed + crystalValue1;
-        console.log(totalGuessed);
-        console.log(targetNumber.html());
-        $("#totalGuessed").html(totalGuessed);
-        if (totalGuessed == targetNumber.html()) {
-          wins++;
-          $("#wins").html(wins);
-          $("#message").html("Yay, You Won!");
-          resetGame();
-        } else if (totalGuessed > targetNumber.html()) {
-          losses++;
-          $("#losses").html(losses);
-          $("#message").html("Oh No, You Lost!");
-          resetGame();
-        }
-      } else if (whichCrystal === "crystal-2") {
-        crystalValue2 = crystal2;
-        totalGuessed = totalGuessed + crystalValue2;
-        console.log(totalGuessed);
-        console.log(targetNumber.html());
-        $("#totalGuessed").html(totalGuessed);
-        if (totalGuessed == targetNumber.html()) {
-          wins++;
-          $("#wins").html(wins);
-          $("#message").html("Yay, You Won!");
-          resetGame();
-        } else if (totalGuessed > targetNumber.html()) {
-          losses++;
-          $("#losses").html(losses);
-          $("#message").html("Oh No, You Lost!");
-          resetGame();
-        }
-      } else if (whichCrystal === "crystal-3") {
-        crystalValue3 = crystal3;
-        totalGuessed = totalGuessed + crystalValue3;
-        console.log(totalGuessed);
-        console.log(targetNumber.html());
-        $("#totalGuessed").html(totalGuessed);
-        if (totalGuessed == targetNumber.html()) {
-          wins++;
-          $("#wins").html(wins);
-          $("#message").html("Yay, You Won!");
-          resetGame();
-        } else if (totalGuessed > targetNumber.html()) {
-          losses++;
-          $("#losses").html(losses);
-          $("#message").html("Oh No, You Lost!");
-          resetGame();
-        }
-      } else if (whichCrystal === "crystal-4") {
-        crystalValue4 = crystal4;
-        totalGuessed = totalGuessed + crystalValue4;
-        console.log(totalGuessed);
-        console.log(targetNumber.html());
-        $("#totalGuessed").html(totalGuessed);
-        if (totalGuessed == targetNumber.html()) {
-          wins++;
-          $("#wins").html(wins);
-          $("#message").html("Yay, You Won!");
-          resetGame();
-        } else if (totalGuessed > targetNumber.html()) {
-          losses++;
-          $("#losses").html(losses);
-          $("#message").html("Oh No, You Lost!");
-          resetGame();
+      for (var i = 0; i < crystals.length; i++) {
+        if (whichCrystal === crystals[i]) {
+          crystalValue = crystalValues[i];
+          console.log(crystalValue);
+          totalGuessed = totalGuessed + crystalValue;
+          $("#totalGuessed").html(totalGuessed);
+          if (totalGuessed == targetNumber.html()) {
+            wins++;
+            $("#wins").html(wins);
+            $("#message").html("Yay, You Won!");
+            resetGame();
+          } else if (totalGuessed > targetNumber.html()) {
+            losses++;
+            $("#losses").html(losses);
+            $("#message").html("Oh No, You Lost!");
+            resetGame();
+          }
         }
       }
     }
