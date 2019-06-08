@@ -1,0 +1,74 @@
+body {
+  /* background: lightyellow; */
+  background-image: url(../images/background-3.png);
+}
+
+.col-one {
+  background: rgb(247, 176, 45);
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin: 0.5%;
+}
+.col-two {
+  background: rgb(238, 222, 189);
+  color: darkgreen;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.75;
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  margin: 0.5%;
+}
+.col-three-A {
+  background: rgb(115, 192, 115);
+  color: purple;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+.col-three-B {
+  background: rgb(8, 252, 252);
+  color: rgb(0, 100, 0);
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  padding-top: 1%;
+}
+.col-four {
+  background: rgb(207, 230, 252);
+  font-weight: bold;
+  margin: 0.5%;
+}
+.col-five {
+  background: rgb(248, 135, 203);
+  color: white;
+  margin: 0.5%;
+  font-size: 14px;
+  font-weight: bold;
+}
+.col-six {
+  background: rgb(248, 135, 203);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0.5%;
+  padding-bottom: 3%;
+}
+
+.img {
+  height: 165px;
+  width: 165px;
+  border-style: dotted;
+  border-color: purple;
+  margin-left: 0.25%;
+  margin-right: 0.25%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crystals Collector!</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- My personal style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row row-one">
+        <div class="col-6 col-one">
+          <span class="align-text-bottom">Crystals Collector!</span>
+        </div>
+      </div>
+      <div class="row row-two">
+        <div class="col-6 col-two">
+            <h2>Game Rules:</h2>
+          <li>You will be given a random number at the start of the game</li>
+          <li>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your score.</li>
+          <li>You win the game by matching your total score to the random number seen in the box below, and you lose the game if your total score goes above the random number.</li>
+          <li>The value of each crystal is hidden until you click on it.</li>
+          <li>Each time when the game starts, the game will change the value of the random number, and each of the four crystals.</li>
+        </div>
+      </div>
+      <div class="row row-three">
+        <div class="col-3 col-three-A">
+          <div id="targetNumber"></div>
+        </div>
+        <div class="col-3 col-three-B">
+          <p>Wins: <div id="wins"></div></p>
+          <p>Losses: <div id="losses"></div></p>
+        </div>
+      </div>
+      <div class="row row-4 row-four">
+        <div class="col-6 col-four">
+          <button class="crystal" value="crystal-1"><img src="assets/images/crystal-1.png" class="img"></button>
+          <button class="crystal" value="crystal-2"><img src="assets/images/crystal-2.png" class="img"></button>
+          <button class="crystal" value="crystal-3"><img src="assets/images/crystal-3.png" class="img"></button>
+          <button class="crystal" value="crystal-4"><img src="assets/images/crystal-4.png" class="img"></button>
+        </div>
+      </div>
+      <div class="row row-five">
+        <div class="col-6 col-five">
+          <span class="align-text-bottom">Your total score is:</span>
+        </div>
+      </div>
+      <div class="row row-six">
+        <div class="col-6 col-six">
+            <div id="totalGuessed">0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to jQuery library and jQuery local file -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>
