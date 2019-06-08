@@ -9,7 +9,9 @@ Here's a quick overview of the project itself:
 
 2. Why the project is useful?
    This project provides the elementary building blocks to constructing JavaScript applications using jQuery
+
    It provides simple examples of what can be done with functions, objects, for/while loops and "if" statements
+
    It also gives a glimpse into how the worlds of HTML, CSS, Bootstrap, and jQuery JavaScript come to work together in harmony
 
 3. How users can get started with the project?
@@ -17,6 +19,7 @@ Here's a quick overview of the project itself:
 
 4. Where users can get help with your project?
    The project is fairly simple and there are a lot of comments throughout the html, css, and js files that explain the steps taken
+
    Google, stackOverflow and W3schools are all great resources if the reader isn't familiar with some of the elements used throughout the codebase
 
 5. Who maintains and contributes to the project?
