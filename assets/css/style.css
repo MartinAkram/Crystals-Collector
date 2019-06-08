@@ -87,3 +87,10 @@ li {
   list-style-position: outside;
   margin-left: -12px;
 }
+
+#crystalOne,
+#crystalTwo,
+#crystalThree,
+#crystalFour {
+  display: none;
+}
