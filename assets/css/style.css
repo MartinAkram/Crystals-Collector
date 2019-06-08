@@ -63,8 +63,8 @@ body {
 }
 
 .img {
-  height: 165px;
-  width: 165px;
+  height: 150px;
+  width: 150px;
   border-style: dotted;
   border-color: purple;
   margin-left: 0.25%;
