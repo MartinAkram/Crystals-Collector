@@ -7,7 +7,7 @@ $(document).ready(function() {
   //This variable, "myRandomNumber" generates a random number that the user must match
   function generateRandomNumber() {
     var myRandomNumber = Math.floor(Math.random() * 102) + 19;
-    $("#targetNumber").append(myRandomNumber);
+    $("#targetNumber").html(myRandomNumber);
   }
   generateRandomNumber();
 
@@ -18,6 +18,12 @@ $(document).ready(function() {
   var crystal2 = Math.floor(Math.random() * 12) + 1;
   var crystal3 = Math.floor(Math.random() * 12) + 1;
   var crystal4 = Math.floor(Math.random() * 12) + 1;
+
+  function resetGame() {
+    generateRandomNumber();
+    totalGuessed = 0;
+    $("#totalGuessed").html(totalGuessed);
+  }
 
   $(".crystal").on("click", function() {
     whichCrystal = $(this).attr("value");
@@ -30,10 +36,12 @@ $(document).ready(function() {
           wins++;
           $("#wins").html(wins);
           $("#message").html("Yay, You Won!");
+          resetGame();
         } else if (totalGuessed > myRandomNumber) {
           losses++;
           $("#losses").html(losses);
           $("#message").html("Oh No, You Lost!");
+          resetGame();
         }
       } else if (whichCrystal === "crystal-2") {
         crystalValue2 = crystal2;
@@ -43,10 +51,12 @@ $(document).ready(function() {
           wins++;
           $("#wins").html(wins);
           $("#message").html("Yay, You Won!");
+          resetGame();
         } else if (totalGuessed > myRandomNumber) {
           losses++;
           $("#losses").html(losses);
           $("#message").html("Oh No, You Lost!");
+          resetGame();
         }
       } else if (whichCrystal === "crystal-3") {
         crystalValue3 = crystal3;
@@ -56,10 +66,12 @@ $(document).ready(function() {
           wins++;
           $("#wins").html(wins);
           $("#message").html("Yay, You Won!");
+          resetGame();
         } else if (totalGuessed > myRandomNumber) {
           losses++;
           $("#losses").html(losses);
           $("#message").html("Oh No, You Lost!");
+          resetGame();
         }
       } else if (whichCrystal === "crystal-4") {
         crystalValue4 = crystal4;
@@ -69,10 +81,12 @@ $(document).ready(function() {
           wins++;
           $("#wins").html(wins);
           $("#message").html("Yay, You Won!");
+          resetGame();
         } else if (totalGuessed > myRandomNumber) {
           losses++;
           $("#losses").html(losses);
           $("#message").html("Oh No, You Lost!");
+          resetGame();
         }
       }
     }
