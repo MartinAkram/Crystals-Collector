@@ -72,3 +72,8 @@ body {
   margin-top: 1%;
   margin-bottom: 1%;
 }
+
+li {
+  list-style-position: outside;
+  margin-left: -12px;
+}
