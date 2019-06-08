@@ -99,8 +99,8 @@ $(document).ready(function() {
             $("#message").html("Yay, You Won! Keep The Streak Going!");
             //And we call the resetGame function to start a new game while preserving the total wins
             resetGame();
-            //Here we define how a player wins
-            //A player wins by matching their totalGuessed to the targetNumber
+            //Here we define how a player loses
+            //A player loses by exceeding the value of targetNumber in their totalGuessed
           } else if (totalGuessed > targetNumber.html()) {
             //If they lose we increase the losses by 1
             losses++;
