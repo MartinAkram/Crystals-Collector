@@ -27,52 +27,52 @@ $(document).ready(function() {
         totalGuessed = totalGuessed + crystalValue1;
         $("#totalGuessed").html(totalGuessed);
         if (totalGuessed == myRandomNumber) {
-          console.log("You Win!");
           wins++;
           $("#wins").html(wins);
+          $("#message").html("Yay, You Won!");
         } else if (totalGuessed > myRandomNumber) {
-          console.log("You Lost!");
           losses++;
           $("#losses").html(losses);
+          $("#message").html("Oh No, You Lost!");
         }
       } else if (whichCrystal === "crystal-2") {
         crystalValue2 = crystal2;
         totalGuessed = totalGuessed + crystalValue2;
         $("#totalGuessed").html(totalGuessed);
         if (totalGuessed == myRandomNumber) {
-          console.log("You Win!");
           wins++;
           $("#wins").html(wins);
+          $("#message").html("Yay, You Won!");
         } else if (totalGuessed > myRandomNumber) {
-          console.log("You Lost!");
           losses++;
           $("#losses").html(losses);
+          $("#message").html("Oh No, You Lost!");
         }
       } else if (whichCrystal === "crystal-3") {
         crystalValue3 = crystal3;
         totalGuessed = totalGuessed + crystalValue3;
         $("#totalGuessed").html(totalGuessed);
         if (totalGuessed == myRandomNumber) {
-          console.log("You Win!");
           wins++;
           $("#wins").html(wins);
+          $("#message").html("Yay, You Won!");
         } else if (totalGuessed > myRandomNumber) {
-          console.log("You Lost!");
           losses++;
           $("#losses").html(losses);
+          $("#message").html("Oh No, You Lost!");
         }
       } else if (whichCrystal === "crystal-4") {
         crystalValue4 = crystal4;
         totalGuessed = totalGuessed + crystalValue4;
         $("#totalGuessed").html(totalGuessed);
         if (totalGuessed == myRandomNumber) {
-          console.log("You Win!");
           wins++;
           $("#wins").html(wins);
+          $("#message").html("Yay, You Won!");
         } else if (totalGuessed > myRandomNumber) {
-          console.log("You Lost!");
           losses++;
           $("#losses").html(losses);
+          $("#message").html("Oh No, You Lost!");
         }
       }
     }
