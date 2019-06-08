@@ -26,8 +26,7 @@ $(document).ready(function() {
         crystalValue1 = crystal1;
         totalGuessed = totalGuessed + crystalValue1;
         $("#totalGuessed").html(totalGuessed);
-        console.log(totalGuessed);
-        if (totalGuessed === myRandomNumber) {
+        if (totalGuessed == myRandomNumber) {
           console.log("You Win!");
           wins++;
           $("#wins").html(wins);
@@ -40,8 +39,7 @@ $(document).ready(function() {
         crystalValue2 = crystal2;
         totalGuessed = totalGuessed + crystalValue2;
         $("#totalGuessed").html(totalGuessed);
-        console.log(totalGuessed);
-        if (totalGuessed === myRandomNumber) {
+        if (totalGuessed == myRandomNumber) {
           console.log("You Win!");
           wins++;
           $("#wins").html(wins);
@@ -54,8 +52,7 @@ $(document).ready(function() {
         crystalValue3 = crystal3;
         totalGuessed = totalGuessed + crystalValue3;
         $("#totalGuessed").html(totalGuessed);
-        console.log(totalGuessed);
-        if (totalGuessed === myRandomNumber) {
+        if (totalGuessed == myRandomNumber) {
           console.log("You Win!");
           wins++;
           $("#wins").html(wins);
@@ -68,8 +65,7 @@ $(document).ready(function() {
         crystalValue4 = crystal4;
         totalGuessed = totalGuessed + crystalValue4;
         $("#totalGuessed").html(totalGuessed);
-        console.log(totalGuessed);
-        if (totalGuessed === myRandomNumber) {
+        if (totalGuessed == myRandomNumber) {
           console.log("You Win!");
           wins++;
           $("#wins").html(wins);
