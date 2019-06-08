@@ -25,11 +25,20 @@ body {
 .col-three-A {
   background: rgb(115, 192, 115);
   color: purple;
-  font-size: 30px;
-  font-weight: bold;
   margin-left: 0.5%;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
+  padding-top: 1%;
+}
+
+.col-three-A p {
+  font-size: 14px;
+  margin-top: 1%;
+  font-weight: bold;
+}
+
+.col-three-A span {
+  font-size: 30px;
 }
 .col-three-B {
   background: rgb(8, 252, 252);
