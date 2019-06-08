@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crystals Collector!</title>
+    <!-- Link to reset css file -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- Link to Boostrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <!-- My personal style sheet -->
+    <!-- Link to my personal css style sheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- Start with one giant container that will hold all the pieces of html code -->
+    <!-- The page is built using a series of rows and columns in Bootstap -->
     <div class="container-fluid">
+      <!-- The first row will contain one column -->
+      <!-- This column will display the name of the game, i.e. "Crystals Collector!" -->
       <div class="row row-one">
         <div class="col-6 col-one">
           <span class="align-text-bottom">Crystals Collector!</span>
         </div>
       </div>
+      <!-- The second row will contain one column -->
+      <!-- This column will include the instructions to the game -->
       <div class="row row-two">
         <div class="col-6 col-two">
           <h2>Game Rules:</h2>
@@ -30,16 +39,16 @@
             </li>
             <li>
               There are four crystals below. By clicking on a crystal, you will
-              add a specific amount of randomy assigned values to your score.
+              add a specific amount of randomy assigned values to your guesses.
             </li>
             <li>
-              You win the game by matching your total score to the Target Number
-              seen in the box below, and you lose the game if your total score
+              You win the game by matching your total guess to the Target Number
+              seen in the box below, and you lose the game if your total guess
               exceeds the Target Number.
             </li>
             <li>The value of each crystal is hidden until you click on it.</li>
             <li>
-              Each time when the game starts, the game will change the value of
+              Each time the game (re)starts, the game will change the value of
               the Target Number, and the value of crystal.
             </li>
             <li>
@@ -49,18 +58,22 @@
           </ul>
         </div>
       </div>
-
+      <!-- The third row contains two columns -->
+      <!-- The first column, called "col-three-A", will show the random number that the player must match -->
       <div class="row row-three">
         <div class="col-3 col-three-A">
             <p>Target Number <hr> <span id="targetNumber">0</span></p>
         </div>
-        <div class="col-3 col-three-B">
-          <p><span id="message">You Got This!</span></p>
-          <hr />
-          <p>Wins: <span id="wins">0</span></p>
-          <p>Losses: <span id="losses">0</span></p>
-        </div>
+      <!-- The second column, called "col-three-B", will display the number of wins and losses -->
+      <div class="col-3 col-three-B">
+        <p><span id="message">You Got This!</span></p>
+        <hr />
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
       </div>
+      <!-- The fourth row will contain one four columns -->
+      <!-- Each of these four columns will hold an image of a different crystal -->
+      <!-- Each image will be clickable and will generate a random number that the user can use to match the target number -->
       <div class="row row-4 row-four">
         <div class="col-6 col-four">
           <button class="crystal" value="crystal-1">
@@ -81,11 +94,15 @@
           </button>
         </div>
       </div>
+      <!-- Row five will contain one column -->
+      <!-- This column will include a static message that says "Your total guess is:" -->
       <div class="row row-five">
         <div class="col-6 col-five">
           <span class="align-text-bottom">Your total guess is:</span>
         </div>
       </div>
+      <!-- The sixth row will contain one column -->
+      <!-- This column will include a dynamically updating total of the user's guesses -->
       <div class="row row-six">
         <div class="col-6 col-six">
           <div id="totalGuessed">0</div>
@@ -93,7 +110,7 @@
       </div>
     </div>
 
-    <!-- Link to jQuery library and jQuery local file -->
+    <!-- Link to jQuery library and jQuery library and my own jQuery code in the javascript file -->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
