@@ -1,8 +1,10 @@
+/* Here we target the background of the entire page */
 body {
   /* background: lightyellow; */
   background-image: url(../images/background.png);
 }
 
+/* In this section we style col-one, the game banner (i.e. "Crystals Collector!") */
 .col-one {
   background: rgb(247, 176, 45);
   color: white;
@@ -12,6 +14,8 @@ body {
   padding-bottom: 1%;
   margin: 0.5%;
 }
+
+/* In this section we style col-two, the game's instructions */
 .col-two {
   background: rgb(238, 222, 189);
   color: darkgreen;
@@ -22,6 +26,15 @@ body {
   padding-bottom: 1%;
   margin: 0.5%;
 }
+
+/* In this section we target the list elements of col-two */
+li {
+  list-style-position: outside;
+  margin-left: -12px;
+}
+
+/* In this section we style col-three-A */
+/* This section shows the target number that the player must match */
 .col-three-A {
   background: rgb(115, 192, 115);
   color: purple;
@@ -31,16 +44,20 @@ body {
   padding-top: 1%;
 }
 
+/* In this section we target the words "Target Number" of col-three-A */
 .col-three-A p {
   font-size: 16px;
   margin-top: 1%;
   font-weight: bold;
 }
 
+/* In this section we target the text stored in the span of col-three-A */
 .col-three-A span {
   font-size: 30px;
   font-weight: bold;
 }
+
+/* In this section we style col-three-B, which contains the win/lose messages */
 .col-three-B {
   background: rgb(8, 252, 252);
   color: rgb(0, 100, 0);
@@ -51,27 +68,16 @@ body {
   margin-bottom: 0.5%;
   padding-top: 1%;
 }
+
+/* In this section we target the background of col-four, i.e. the crystal images */
 .col-four {
   background: rgb(207, 230, 252);
   font-weight: bold;
   margin: 0.5%;
 }
-.col-five {
-  background: rgb(248, 135, 203);
-  color: white;
-  margin: 0.5%;
-  font-size: 16px;
-  font-weight: bold;
-}
-.col-six {
-  background: rgb(248, 135, 203);
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 0.5%;
-  padding-bottom: 3%;
-}
 
+/* In this sectin we specifically target the images themselves */
+/* We set their size, border, and margin */
 .img {
   height: 150px;
   width: 150px;
@@ -83,14 +89,31 @@ body {
   margin-bottom: 1%;
 }
 
-li {
-  list-style-position: outside;
-  margin-left: -12px;
-}
-
+/* In this section, we hide the text stored in the span of each photo */
+/* We don't want that text displayed on the HTML page */
+/* But we still want to store it for later access in the javascript file */
 #crystalOne,
 #crystalTwo,
 #crystalThree,
 #crystalFour {
   display: none;
+}
+
+/* In this section we target the text and background of col-five */
+.col-five {
+  background: rgb(248, 135, 203);
+  color: white;
+  margin: 0.5%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* In this section we target the text and background of col-six */
+.col-six {
+  background: rgb(248, 135, 203);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0.5%;
+  padding-bottom: 3%;
 }
